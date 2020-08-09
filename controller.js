@@ -31,7 +31,7 @@ function initPresentation() {
         connection && connection.terminate();
     });
 
-    const request = new PresentationRequest(["/canvas.html"]);
+    const request = new PresentationRequest(["./canvas.html"]);
 
     const handleAvailabilityChange = available => {
         presentBtn.style.display = available ? "inline" : "none";
